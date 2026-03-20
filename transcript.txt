@@ -1,0 +1,95 @@
+0:00Good morning. My name is Maidi. Uh I have completed web server log analysis.
+0:055 secondsUh this is the notebook that I have done based on the requirement. Uh coming to the first cell. Uh in the first cell I
+0:1313 secondshave uh imported the URL library. uh which is used for the purpose of downloading uh real world web server log
+0:2121 secondsdata sets and the URL is assigned to a variable uh named as URL and uh with the
+0:2828 secondshelp of URL retrieve uh I have download the uh file which is present in the URL
+0:3535 secondsand uh uh named it as Colgate access log.j zip and in the second cell I have
+0:4343 secondsimported just for the purpose of whether the files are existed in the directory or not to verify that I have used uh
+0:5151 secondslist dictionary uh directory. Uh coming to the third cell uh I have imported uh
+0:5858 secondsgip uh which is used basically used for reading the zip files. Uh coming to the
+1:061 minute, 6 secondsfourth cell. In the fourth cell uh I have opened the zip file with the help of gjip and uh the operation that I have
+1:131 minute, 13 secondsI have performed is uh read test and later on I have performed uh an uh uh
+1:201 minute, 20 secondsiterative statement uh for loop I mean for loop uh to read uh each and every
+1:271 minute, 27 secondsline and uh I have taken it for a range of five. I mean uh I am getting the output of uh five lines first five
+1:361 minute, 36 secondslines. Uh later on uh I have used uh read lines. The difference between read line and read lines is uh it is going to
+1:441 minute, 44 secondsread all the lines one by one. Uh in the read lines uh it is going to read only
+1:521 minute, 52 secondsone line at a time. Uh here we have assigned it to a variable called lines.
+1:581 minute, 58 secondsIn the lines uh it consists of each and every line separated by comma in a list format. Uh here we have performed uh
+2:062 minutes, 6 secondslength of lines. Basically this is used to calculate the total number of rows and we have printed the first five
+2:142 minutes, 14 secondslines. Uh this is the output of first five lines. And uh in the next thing uh this is basically that I have done
+2:232 minutes, 23 secondsduring the development uh process. This is basically used to display the total content which is present in each and
+2:302 minutes, 30 secondsevery row and to display all the columns that are present here. Uh coming to the uh the cell uh I have imported the
+2:382 minutes, 38 secondspandas uh basically the purpose of pandas is to perform data clean data formatting all
+2:462 minutes, 46 secondsthose types. Uh here I have used data frame uh data frame I mean I have
+2:522 minutes, 52 secondscreated a data frame on the lines uh and assign a column name column name as uh
+2:592 minutes, 59 secondsraw logs and I have printed the uh the data frame as an output with the
+3:063 minutes, 6 secondshelp of head. uh in this cell. Uh first of all, I have performed strip method.
+3:123 minutes, 12 secondsHere strip method is basically used for the purpose of removing unwanted spaces which are present at the leading and uh
+3:193 minutes, 19 secondstailing part. uh and later on for each line I have uh make the parts uh based
+3:273 minutes, 27 secondsupon I mean by using the rejects I have make the partition and assign each part to a column name like host time stamp
+3:353 minutes, 35 secondsfile name HTTP code and bytes. Then after I have converted uh the data types I mean original data types. I have
+3:433 minutes, 43 secondsperformed the type conversion by using two numeric and uh uh to date.
+3:513 minutes, 51 secondsUh and then I have also performed formatting I mean choosing appropriate date format.
+4:004 minutesUh this is the same thing that I have done above just uh converting to their original data types.
+4:084 minutes, 8 secondsuh here I have selected the required columns uh just for the purpose of better
+4:144 minutes, 14 secondsutilization of memory. Uh here uh in in order to avoid the null values first of
+4:214 minutes, 21 secondsall I have calculated the total number of null values that are present in each and every column by using is null method
+4:284 minutes, 28 secondsand I have also divided with by the total number of rows that are present in the data frame. This is the result what
+4:354 minutes, 35 secondsI have got. uh it is saying that there is a possibility of having uh 0 6 uh
+4:434 minutes, 43 seconds0.61% of rows as null values. So that the next step what I have done is I have removed all the rows I mean null rows.
+4:524 minutes, 52 secondsThen after the remaining null values present in the bytes that I have filled with zero by using the fill now method.
+5:015 minutes, 1 secondAnd later on uh from the file name I have extracted HTML dot uh uh HTML
+5:105 minutes, 10 secondsuh dot h uh here what uh HTML uh and
+5:185 minutes, 18 secondsGIF uh these are to be extracted and given within column name called as file extension.
+5:265 minutes, 26 secondsuh later on from the data frame I have uh selected the number of columns for
+5:335 minutes, 33 secondsbetter uh memory utilization. uh up to up to now what I have done is I have performed data cleaning uh handling the
+5:425 minutes, 42 secondsnull values uh for data formatting date formatting uh selecting only the
+5:505 minutes, 50 secondsrequired columns by avoiding unwanted things. This is what I have done up to now. Uh coming to the questions. First
+5:565 minutes, 56 secondsquestion is uh is to count the total number of log records to count the total number of records. I have used uh length
+6:046 minutes, 4 secondsof the data frame. It actually counts the total number of rows that are present in the data frame. And I am going to print the total number of records. It is printed as 7 lakh 22,281.
+6:166 minutes, 16 secondsUh coming to the second question. This is count of unique values. For counting the unique values, I am going to use nunique. uh selecting the require I mean
+6:256 minutes, 25 secondsselecting the uh specific column and then I am going to perform n unique uh which will results the unique number of
+6:336 minutes, 33 secondsI mean count of unique values that are present in the in that column. Uh coming to the third question uh day wise uh
+6:416 minutes, 41 secondsunique file name counts. For that I have first of all I have formatted the date using uh htr of time and assign it to a
+6:516 minutes, 51 secondsuh I mean assign to a new column named as date. Then after I have performed group by on date uh selecting the file names after selecting the file names I
+7:007 minutesam going to perform n unique which will counts the unique values. uh this will result I mean uh this result is
+7:087 minutes, 8 secondsconverted into dictionary and then I am going to uh print the dictionary. Here is the output how it exactly looks like.
+7:167 minutes, 16 secondsUh first of all uh on April 1st of 1995 I am going
+7:227 minutes, 22 secondsI am going to get 4.7 unique file access count. on 1st of August 1995 I'm going to get uh 663 unique file access count.
+7:357 minutes, 35 secondsThis is how the output uh arrives I mean look likes. Uh coming to the fourth question uh number of 44 response code.
+7:447 minutes, 44 secondsFor that first of all I need to select 44 value that is present in the HTTP uh
+7:517 minutes, 51 secondscode. For that I need to write the condition. Then after I am going to count the total number of times that it has appears. It will result the total
+8:018 minutes, 1 secondnumber of 44 errors that are present in the data sets which is uh 22 23,4404.
+8:108 minutes, 10 secondsUh coming to the fifth one getting the top 15 file names with 494 response. For that first of all I need to filter the 494.
+8:198 minutes, 19 secondsuh I mean I have written a condition which will uh purely select the 44. Then after I am going to select the column
+8:268 minutes, 26 secondsname file count. I am going to perform value counts. The purpose of using value counts is it is going to count the the
+8:358 minutes, 35 secondsnumber of appearance of each file and it is going to and it is going to select only the 15s and then after it is going
+8:448 minutes, 44 secondsto represent in the list format. This is how the uh output looks like. Uh HTML uh
+8:518 minutes, 51 secondsI mean index html is going to appear uh 4,692.
+8:588 minutes, 58 secondsThis is how the output look like. And coming to the sixth question, getting the top 15 extension with 44 response.
+9:079 minutes, 7 secondsFor that we need to filter the u number of rows by using a condition called
+9:149 minutes, 14 secondshttpp code equal to 4 404. Later on I am going to perform group by on file
+9:219 minutes, 21 secondsextension and size. Here I am going to count the number of occurrence in the file extension. Later on uh sorting
+9:319 minutes, 31 secondsthese values and getting the top 15 only. uh and uh formatting the result in
+9:389 minutes, 38 secondsthe list format. This is how the output looks like. HTML appears uh 12,137 and GI of 7,2.
+9:489 minutes, 48 secondsUh coming to the seventh question uh bandwidth transferred per day for July 1995. For for that we need to first of
+9:579 minutes, 57 secondsall we need to perform first of all we need to uh access year and month for the from the time stamp
+10:0610 minutes, 6 secondsfor that we have uh used dt dot year and dt dot month and uh those two conditions
+10:1410 minutes, 14 secondsmust uh be uh evaluated at the same time for that I have used end operator uh and
+10:2310 minutes, 23 secondsafter selecting the rows based on on the two conditions uh I am going to perform some operations which will uh sum uh the
+10:3310 minutes, 33 secondstotal number of bytes that are transferred per each and every day on July uh and converting into type of
+10:4210 minutes, 42 secondsdictionary and I am going to print the output. This is how exactly it looks like. On July 1st of 1995 this much number of bits that are transferred.
+10:5110 minutes, 51 secondsLikewise uh each day of the July month the output appears like this. I mean total number of bits bytes that are transferred on that date on that month.
+11:0211 minutes, 2 secondsComing to the eighth question hourly request distribution. For that we need to extract our for that we have used dt
+11:0911 minutes, 9 secondsdot hour. Then after uh we are going to perform group by an hour and finding the size total uh total I mean this will
+11:1711 minutes, 17 secondsresult I mean this will count the number of requested that has been occurred per each and every hour and convert it into
+11:2511 minutes, 25 secondsthe type I mean convert it into dictionary type and printing the result on zero hour we have 39,500
+11:3411 minutes, 34 secondsuh requests on first hour we have got 32,000
+11:4011 minutes, 40 seconds5 to5 number of uh results that are appeared. Coming to the ninth one top uh
+11:4711 minutes, 47 seconds10 most request file names. Uh in that we have selected the file names and performed the value count getting the
+11:5511 minutes, 55 secondstop 10 uh using a head of 10 and uh printing this uh output. It look like
+12:0112 minutes, 1 secondindex.html HTML has uh uh appeared uh this much number of
+12:0812 minutes, 8 secondstimes. Three uh 3.gf has appeared this number of times. This is how output look like. Coming to the 10th one uh HTTP
+12:1812 minutes, 18 secondsresponse code distribution. For that first of all I have selected the HTTP code and then perform value counts which
+12:2612 minutes, 26 secondswill count the number of appearance that each value gets and converting into dictionary and printing in the output.
+12:3312 minutes, 33 secondsuh two two 200 appears 5 lakh 66,139 times and 34 likewise.
